@@ -132,7 +132,7 @@ export default function Invoices() {
   const resetForm = () => {
     setFormData({
       client_id: "",
-      project_id: "",
+      project_id: "none",
       amount: "",
       status: "pending",
       due_date: "",
