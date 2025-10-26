@@ -119,7 +119,7 @@ export default function Invoices() {
     setEditingInvoice(invoice);
     setFormData({
       client_id: invoice.client_id,
-      project_id: invoice.project_id || "",
+      project_id: invoice.project_id || "none",
       amount: invoice.amount.toString(),
       status: invoice.status,
       due_date: invoice.due_date,
