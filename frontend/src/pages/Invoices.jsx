@@ -200,7 +200,7 @@ export default function Invoices() {
                         <SelectValue placeholder="Select a project" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="">None</SelectItem>
+                        <SelectItem value="none">None</SelectItem>
                         {projects.filter(p => p.client_id === formData.client_id).map((project) => (
                           <SelectItem key={project.id} value={project.id}>{project.name}</SelectItem>
                         ))}
