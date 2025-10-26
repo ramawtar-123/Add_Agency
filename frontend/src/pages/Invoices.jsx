@@ -86,7 +86,7 @@ export default function Invoices() {
       const submitData = {
         ...formData,
         amount: total,
-        project_id: formData.project_id || null
+        project_id: formData.project_id === "none" ? null : formData.project_id || null
       };
       
       if (editingInvoice) {
